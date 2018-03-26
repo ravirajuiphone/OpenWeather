@@ -9,20 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private var downloadTask: URLSessionDownloadTask!
     private var reachability: Reachability!
-    private let imageCache = ImageCache.shared
+    var imageCache: ImageCache!
     private var weatherList = [WeatherDetails]()
     private var weatherFullInfo: WeatherFullInfo?
     private var weatherDetails: [String: [WeatherDetails]]?
     private var weatherDates: [String]?
     @IBOutlet weak var weatherTabelview: UITableView!
-    private let apiManager = APIManager.shared
+    let apiManager = APIManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.imageCache = ImageCache(shared: URLSession.shared, sessionTask: URLSessionDataTask())
         self.reachability = Reachability.init()
-        downloadTask = URLSessionDownloadTask()
         let nibName = UINib(nibName: "WeatherInfoTableViewCell", bundle: nil)
         self.weatherTabelview.register(nibName, forCellReuseIdentifier: "WeatherTableviewCell")
         self.weatherTabelview.estimatedRowHeight = 60.0
@@ -116,17 +115,20 @@ class ViewController: UIViewController {
             
             // Set labels
             cell.weatheLabelDetailsTitle?.text = infoParts.joined(separator: "   ")
-            let imgUri = weatherDetails.weather?.first?.icon
+            
             DispatchQueue.global(qos: .background).async {
-                self.imageCache.imageFor(uriString: imgUri) { (image, error) in
-                    if error == nil {
-                        DispatchQueue.main.async() {
-                            if cell.tag == indexPath.row {
-                                cell.weatherIcon?.image = image
+                if let imgUri = weatherDetails.weather?.first?.icon {
+                    self.imageCache.imageFor(uriString: imgUri) { (image, error) in
+                        if error == nil {
+                            DispatchQueue.main.async() {
+                                if cell.tag == indexPath.row {
+                                    cell.weatherIcon?.image = image
+                                }
                             }
                         }
                     }
                 }
+                
             }
         }
     }

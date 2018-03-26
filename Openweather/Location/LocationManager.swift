@@ -11,19 +11,20 @@ import CoreLocation
 
 class LocationManager: NSObject,CLLocationManagerDelegate {
     static let sharedInstance = LocationManager()
-    var locationManager: CLLocationManager!
+    var locationManagerObj: CLLocationManager!
     var locationStatus : NSString = "Not Started"
     var lastKnownLocation : CLLocationCoordinate2D?
-    var postelCode: String?
+    var postalCode: String? = nil
     // Location Manager helper stuff
-    
-    func initLocationManager() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.distanceFilter = 500
-        locationManager.startUpdatingLocation()
+    private override init() {
+    }
+    func initLocationManager(locManager: CLLocationManager = CLLocationManager()) {
+        self.locationManagerObj = locManager
+        locationManagerObj.delegate = self
+        locationManagerObj.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManagerObj.requestWhenInUseAuthorization()
+        locationManagerObj.distanceFilter = 500
+        locationManagerObj.startUpdatingLocation()
     }
     
     func isLocationServicesEnabled() -> Bool {
@@ -74,15 +75,15 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
             }
         }
 
-        locationManager.stopUpdatingLocation()
+        locationManagerObj.stopUpdatingLocation()
     }
     
     func displayLocationInfo(_ placemark: CLPlacemark?) {
         if let containsPlacemark = placemark {
             //stop updating location to save battery life
-            self.locationManager.stopUpdatingLocation()
+            self.locationManagerObj.stopUpdatingLocation()
             //let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
-            self.postelCode = (containsPlacemark.postalCode != nil) ? containsPlacemark.postalCode : nil
+            self.postalCode = containsPlacemark.postalCode ?? nil
         }
     }
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
@@ -100,12 +101,12 @@ class LocationManager: NSObject,CLLocationManagerDelegate {
             
             NSLog("Location to Allowed")
             // Start location services
-            locationManager.startUpdatingLocation()
+            locationManagerObj.startUpdatingLocation()
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        locationManager.stopUpdatingLocation()
+        manager.stopUpdatingLocation()
         print(error)
     }
 }

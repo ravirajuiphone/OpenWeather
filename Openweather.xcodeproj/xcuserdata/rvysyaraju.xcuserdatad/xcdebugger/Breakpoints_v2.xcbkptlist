@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ViewController/ViewController.swift"
-            timestampString = "543590160.645641"
+            timestampString = "543784699.978326"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "loadWeatherInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ImageCache/ImageCache.swift"
-            timestampString = "543737333.91043"
+            timestampString = "543784699.978417"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "imageFor(uriString:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ImageCache/ImageCache.swift"
-            timestampString = "543737333.9107929"
+            timestampString = "543784699.978474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "save(url:image:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ImageCache/ImageCache.swift"
-            timestampString = "543737341.583207"
+            timestampString = "543784699.9785219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "imageFor(uriString:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ImageCache/ImageCache.swift"
-            timestampString = "543737342.9827189"
+            timestampString = "543784699.978568"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "imageFor(uriString:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ViewController/ViewController.swift"
-            timestampString = "543737367.547893"
+            timestampString = "543784699.978614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "loadCustomeCell(cell:indexPath:)"
             landmarkType = "7">
             <Locations>
@@ -246,31 +246,31 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Openweather.ViewController.loadCustomeCell(cell: Openweather.WeatherInfoTableViewCell, indexPath: Foundation.IndexPath) -&gt; ()"
+                  symbolName = "Openweather.ViewController.loadCustomeCell(cell: Openweather.WeatherInfoTableViewCell, indexPath: Foundation.IndexPath) -&gt; ()"
                   moduleName = "Openweather"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rvysyaraju/Downloads/Openweather/Openweather/ViewController/ViewController.swift"
-                  timestampString = "543737367.553687"
+                  urlString = "file:///Users/rvysyaraju/Documents/SampleApps/New/Sample/OpenWeather/Openweather/ViewController/ViewController.swift"
+                  timestampString = "543784700.044227"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "78">
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "6528">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in Openweather.ViewController.loadCustomeCell(cell: Openweather.WeatherInfoTableViewCell, indexPath: Foundation.IndexPath) -&gt; ()"
+                  symbolName = "closure #1 () -&gt; () in Openweather.ViewController.loadCustomeCell(cell: Openweather.WeatherInfoTableViewCell, indexPath: Foundation.IndexPath) -&gt; ()"
                   moduleName = "Openweather"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rvysyaraju/Downloads/Openweather/Openweather/ViewController/ViewController.swift"
-                  timestampString = "543737367.55678"
+                  urlString = "file:///Users/rvysyaraju/Documents/SampleApps/New/Sample/OpenWeather/Openweather/ViewController/ViewController.swift"
+                  timestampString = "543784700.046456"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "121"
-                  endingLineNumber = "121"
-                  offsetFromSymbolStart = "39">
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "2328">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -282,12 +282,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ViewController/ViewController.swift"
-            timestampString = "543737370.25586"
+            timestampString = "543784699.978667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
             endingLineNumber = "121"
             landmarkName = "loadCustomeCell(cell:indexPath:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in Openweather.ViewController.loadCustomeCell(cell: Openweather.WeatherInfoTableViewCell, indexPath: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Openweather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rvysyaraju/Documents/SampleApps/New/Sample/OpenWeather/Openweather/ViewController/ViewController.swift"
+                  timestampString = "543784700.051016"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "1880">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in Openweather.ViewController.loadCustomeCell(cell: Openweather.WeatherInfoTableViewCell, indexPath: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Openweather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rvysyaraju/Documents/SampleApps/New/Sample/OpenWeather/Openweather/ViewController/ViewController.swift"
+                  timestampString = "543784700.052982"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "39">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Openweather/ImageCache/ImageCache.swift"
+            timestampString = "543784699.9787199"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "imageFor(uriString:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Openweather/Location/LocationManager.swift"
+            timestampString = "543784699.97877"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "locationManager(_:didFailWithError:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -298,12 +362,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Openweather/ViewController/ViewController.swift"
-            timestampString = "543737381.636116"
+            timestampString = "543784699.978817"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "loadCustomeCell(cell:indexPath:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

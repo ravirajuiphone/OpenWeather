@@ -10,10 +10,12 @@ import UIKit
 import CoreData
 let BaseImageUri = "http://openweathermap.org/img/w/%@.png"
 class ImageCache: NSObject {
-    static let shared = ImageCache()
-    
-    private var task = URLSessionDataTask()
-    private let session = URLSession.shared
+    var session: URLSession!
+    var task: URLSessionDataTask!
+    init(shared urlSession: URLSession = URLSession.shared, sessionTask: URLSessionDataTask = URLSessionDataTask() ) {
+        session = urlSession
+        task = sessionTask
+    }
     
     func imageFor(uriString: String?, completionHandler: @escaping (UIImage?, Error?) -> Swift.Void) {
         guard let imageUri = uriString,let url = URL(string: String(format: BaseImageUri,imageUri)) else {

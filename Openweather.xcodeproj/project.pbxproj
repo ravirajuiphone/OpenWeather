@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94F2FEFE20696F81000F8009 /* ImageCacheTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2FEFD20696F81000F8009 /* ImageCacheTest.swift */; };
+		94F2FF00206974EB000F8009 /* LocationManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2FEFF206974EB000F8009 /* LocationManagerTest.swift */; };
 		94F568962063E631002D1C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F568952063E631002D1C34 /* AppDelegate.swift */; };
 		94F5689B2063E631002D1C34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F568992063E631002D1C34 /* Main.storyboard */; };
 		94F5689D2063E631002D1C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94F5689C2063E631002D1C34 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94F2FEFD20696F81000F8009 /* ImageCacheTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheTest.swift; sourceTree = "<group>"; };
+		94F2FEFF206974EB000F8009 /* LocationManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTest.swift; sourceTree = "<group>"; };
 		94F568922063E631002D1C34 /* Openweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Openweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94F568952063E631002D1C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94F5689A2063E631002D1C34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 			children = (
 				94F568AA2063E632002D1C34 /* OpenweatherTests.swift */,
 				94F568AC2063E632002D1C34 /* Info.plist */,
+				94F2FEFD20696F81000F8009 /* ImageCacheTest.swift */,
+				94F2FEFF206974EB000F8009 /* LocationManagerTest.swift */,
 			);
 			path = OpenweatherTests;
 			sourceTree = "<group>";
@@ -308,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F2FEFE20696F81000F8009 /* ImageCacheTest.swift in Sources */,
+				94F2FF00206974EB000F8009 /* LocationManagerTest.swift in Sources */,
 				94F568AB2063E632002D1C34 /* OpenweatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
